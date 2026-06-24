@@ -32,7 +32,7 @@ export function HowItWorksSection() {
     >
       {/* Background accent */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[600px] h-[400px] rounded-full bg-[oklch(var(--primary)/0.03)] blur-3xl" />
+        <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[600px] h-[400px] rounded-full bg-[oklch(0.82_0.13_195/0.03)] blur-3xl" />
       </div>
 
       <div className="max-w-6xl mx-auto relative z-10">
@@ -41,10 +41,10 @@ export function HowItWorksSection() {
           className={`section-fade-in text-center mb-16 ${isVisible ? "visible" : ""}`}
         >
           <p className="eyebrow mb-4">How It Works</p>
-          <h2 className="text-4xl lg:text-5xl font-black text-[oklch(var(--foreground))] mb-6 tracking-tight">
+          <h2 className="text-4xl lg:text-5xl font-black text-[oklch(0.96_0.01_240)] mb-6 tracking-tight">
             Payroll in <span className="gradient-text">3 Simple Steps</span>
           </h2>
-          <p className="text-lg text-[oklch(var(--muted-foreground))] max-w-xl mx-auto">
+          <p className="text-lg text-[oklch(0.72_0.04_240)] max-w-xl mx-auto">
             From data import to HMRC submission in minutes, not months.
           </p>
         </div>
@@ -52,10 +52,10 @@ export function HowItWorksSection() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 relative">
           {/* Connector lines on desktop */}
           <div className="hidden lg:block absolute top-16 left-1/3 right-1/3 h-px">
-            <div className="h-px bg-gradient-to-r from-[oklch(var(--primary)/0.5)] to-transparent w-full" />
+            <div className="h-px bg-gradient-to-r from-[oklch(0.82_0.13_195/0.5)] to-transparent w-full" />
           </div>
           <div className="hidden lg:block absolute top-16 left-2/3 right-0 h-px">
-            <div className="h-px bg-gradient-to-r from-[oklch(var(--primary)/0.5)] to-transparent w-full" />
+            <div className="h-px bg-gradient-to-r from-[oklch(0.82_0.13_195/0.5)] to-transparent w-full" />
           </div>
 
           {steps.map(({ number, icon: Icon, title, desc }, i) => (
@@ -66,25 +66,25 @@ export function HowItWorksSection() {
               data-ocid={`how-it-works.item.${i + 1}`}
             >
               {/* Step number */}
-              <div className="text-7xl font-black text-[oklch(var(--primary)/0.08)] leading-none mb-6 select-none">
+              <div className="text-7xl font-black text-[oklch(0.82_0.13_195/0.08)] leading-none mb-6 select-none">
                 {number}
               </div>
 
-              <div className="w-14 h-14 rounded-2xl bg-[oklch(var(--primary)/0.15)] border border-[oklch(var(--primary)/0.3)] flex items-center justify-center mx-auto mb-5">
-                <Icon className="w-7 h-7 text-[oklch(var(--primary))]" />
+              <div className="w-14 h-14 rounded-2xl bg-[oklch(0.82_0.13_195/0.15)] border border-[oklch(0.82_0.13_195/0.3)] flex items-center justify-center mx-auto mb-5">
+                <Icon className="w-7 h-7 text-[oklch(0.82_0.13_195)]" />
               </div>
 
-              <h3 className="text-xl font-bold text-[oklch(var(--foreground))] mb-3">
+              <h3 className="text-xl font-bold text-[oklch(0.96_0.01_240)] mb-3">
                 {title}
               </h3>
-              <p className="text-[oklch(var(--muted-foreground))] leading-relaxed">
+              <p className="text-[oklch(0.72_0.04_240)] leading-relaxed">
                 {desc}
               </p>
 
               {/* Step connector dot */}
               {i < 2 && (
-                <div className="hidden lg:block absolute -right-4 top-16 w-8 h-8 rounded-full border-2 border-[oklch(var(--primary)/0.5)] bg-[oklch(var(--background))] flex items-center justify-center z-10">
-                  <div className="w-2 h-2 rounded-full bg-[oklch(var(--primary))]" />
+                <div className="hidden lg:block absolute -right-4 top-16 w-8 h-8 rounded-full border-2 border-[oklch(0.82_0.13_195/0.5)] bg-[oklch(0.08_0.025_240)] flex items-center justify-center z-10">
+                  <div className="w-2 h-2 rounded-full bg-[oklch(0.82_0.13_195)]" />
                 </div>
               )}
             </div>

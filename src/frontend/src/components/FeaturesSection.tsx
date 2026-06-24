@@ -64,11 +64,11 @@ export function FeaturesSection() {
           className={`section-fade-in text-center mb-16 ${isVisible ? "visible" : ""}`}
         >
           <p className="eyebrow mb-4">Features</p>
-          <h2 className="text-4xl lg:text-5xl font-black text-[oklch(var(--foreground))] mb-6 tracking-tight">
+          <h2 className="text-4xl lg:text-5xl font-black text-[oklch(0.96_0.01_240)] mb-6 tracking-tight">
             Everything You Need.{" "}
             <span className="gradient-text">Nothing You Don't.</span>
           </h2>
-          <p className="text-lg text-[oklch(var(--muted-foreground))] max-w-xl mx-auto">
+          <p className="text-lg text-[oklch(0.72_0.04_240)] max-w-xl mx-auto">
             Purpose-built for UK payroll professionals who demand precision,
             speed, and compliance.
           </p>
@@ -83,14 +83,14 @@ export function FeaturesSection() {
               className="glass-card glass-card-hover rounded-2xl p-6 flex flex-col gap-4"
               data-ocid="features.card"
             >
-              <div className="w-11 h-11 rounded-xl bg-[oklch(var(--primary)/0.12)] border border-[oklch(var(--primary)/0.25)] flex items-center justify-center">
-                <Icon className="w-5 h-5 text-[oklch(var(--primary))]" />
+              <div className="w-11 h-11 rounded-xl bg-[oklch(0.82_0.13_195/0.12)] border border-[oklch(0.82_0.13_195/0.25)] flex items-center justify-center">
+                <Icon className="w-5 h-5 text-[oklch(0.82_0.13_195)]" />
               </div>
               <div>
-                <h3 className="text-base font-bold text-[oklch(var(--foreground))] mb-2 leading-tight">
+                <h3 className="text-base font-bold text-[oklch(0.96_0.01_240)] mb-2 leading-tight">
                   {title}
                 </h3>
-                <p className="text-sm text-[oklch(var(--muted-foreground))] leading-relaxed">
+                <p className="text-sm text-[oklch(0.72_0.04_240)] leading-relaxed">
                   {desc}
                 </p>
               </div>

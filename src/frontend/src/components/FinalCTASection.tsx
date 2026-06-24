@@ -10,11 +10,11 @@ export function FinalCTASection() {
     >
       {/* Radial glow */}
       <div className="absolute inset-0 radial-glow-cta" />
-      <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[800px] h-[400px] rounded-full bg-[oklch(var(--primary)/0.06)] blur-3xl" />
+      <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[800px] h-[400px] rounded-full bg-[oklch(0.82_0.13_195/0.06)] blur-3xl" />
 
       {/* Ring ornament */}
-      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border border-[oklch(var(--primary)/0.06)] pointer-events-none" />
-      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full border border-[oklch(var(--primary)/0.08)] pointer-events-none" />
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border border-[oklch(0.82_0.13_195/0.06)] pointer-events-none" />
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full border border-[oklch(0.82_0.13_195/0.08)] pointer-events-none" />
 
       <div
         ref={ref}
@@ -22,12 +22,12 @@ export function FinalCTASection() {
       >
         <p className="eyebrow">Get Started Today</p>
 
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-[oklch(var(--foreground))] leading-tight tracking-tight">
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-[oklch(0.96_0.01_240)] leading-tight tracking-tight">
           Stop Fixing Payroll Errors. <br />
           <span className="gradient-text">Start Preventing Them.</span>
         </h2>
 
-        <p className="text-lg text-[oklch(var(--muted-foreground))] max-w-lg">
+        <p className="text-lg text-[oklch(0.72_0.04_240)] max-w-lg">
           Join hundreds of UK businesses running payroll with confidence. No
           penalties. No stress. No errors.
         </p>
@@ -35,7 +35,7 @@ export function FinalCTASection() {
         <div className="flex flex-col sm:flex-row items-center gap-4">
           <button
             type="button"
-            className="btn-primary px-10 py-4 text-lg font-bold"
+            className="btn-teal px-10 py-4 text-lg font-bold"
             data-ocid="cta.primary_button"
           >
             Book a Demo
@@ -49,24 +49,22 @@ export function FinalCTASection() {
           </button>
         </div>
 
-        <p className="text-sm text-[oklch(var(--muted-foreground))]">
+        <p className="text-sm text-[oklch(0.62_0.04_240)]">
           No credit card required · Free 30-day trial · Cancel anytime
         </p>
 
         {/* Stats row */}
-        <div className="grid grid-cols-3 gap-8 mt-8 pt-8 border-t border-[oklch(var(--border)/0.4)] w-full">
+        <div className="grid grid-cols-3 gap-8 mt-8 pt-8 border-t border-[oklch(0.25_0.05_240/0.4)] w-full">
           {[
             { value: "0%", label: "Error rate" },
             { value: "< 2h", label: "Migration time" },
             { value: "99.99%", label: "Platform uptime" },
           ].map(({ value, label }) => (
             <div key={label} className="text-center">
-              <p className="text-3xl lg:text-4xl font-black primary-glow mb-1">
+              <p className="text-3xl lg:text-4xl font-black teal-glow mb-1">
                 {value}
               </p>
-              <p className="text-sm text-[oklch(var(--muted-foreground))]">
-                {label}
-              </p>
+              <p className="text-sm text-[oklch(0.62_0.04_240)]">{label}</p>
             </div>
           ))}
         </div>

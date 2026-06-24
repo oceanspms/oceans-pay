@@ -7,13 +7,12 @@ import { HeroSection } from "./components/HeroSection";
 import { HowItWorksSection } from "./components/HowItWorksSection";
 import { ProblemSection } from "./components/ProblemSection";
 import { SecuritySection } from "./components/SecuritySection";
-import { SocialProofSection } from "./components/SocialProofSection";
 import { SolutionSection } from "./components/SolutionSection";
 import { VideoSection } from "./components/VideoSection";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-[oklch(0.08_0.025_240)] text-[oklch(0.96_0.01_240)]">
       <Header />
       <main>
         <HeroSection />
@@ -22,7 +21,6 @@ export default function App() {
         <FeaturesSection />
         <VideoSection />
         <HowItWorksSection />
-        <SocialProofSection />
         <ComparisonSection />
         <SecuritySection />
         <FinalCTASection />

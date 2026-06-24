@@ -31,7 +31,7 @@ export function SolutionSection() {
     <section id="solution" className="relative py-24 lg:py-32 px-4 sm:px-6">
       {/* Subtle divider glow */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute left-1/2 -translate-x-1/2 top-0 w-px h-24 bg-gradient-to-b from-transparent to-[oklch(var(--primary)/0.3)]" />
+        <div className="absolute left-1/2 -translate-x-1/2 top-0 w-px h-24 bg-gradient-to-b from-transparent to-[oklch(0.82_0.13_195/0.3)]" />
       </div>
 
       <div className="max-w-6xl mx-auto">
@@ -40,10 +40,10 @@ export function SolutionSection() {
           className={`section-fade-in text-center mb-16 ${isVisible ? "visible" : ""}`}
         >
           <p className="eyebrow mb-4">The Solution</p>
-          <h2 className="text-4xl lg:text-5xl font-black text-[oklch(var(--foreground))] mb-6 tracking-tight">
-            Meet <span className="primary-glow">Oceans Pay</span>
+          <h2 className="text-4xl lg:text-5xl font-black text-[oklch(0.96_0.01_240)] mb-6 tracking-tight">
+            Meet <span className="teal-glow">Oceans Pay</span>
           </h2>
-          <p className="text-lg text-[oklch(var(--muted-foreground))] max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-[oklch(0.72_0.04_240)] max-w-2xl mx-auto leading-relaxed">
             We didn't rebuild traditional payroll software. We created something
             entirely new — an AI-native platform designed from the ground up to
             eliminate errors, not just report them.
@@ -57,14 +57,14 @@ export function SolutionSection() {
               className={`section-fade-in glass-card glass-card-hover rounded-2xl p-6 lg:p-8 flex gap-5 ${isVisible ? "visible" : ""}`}
               style={{ transitionDelay: `${i * 0.1}s` }}
             >
-              <div className="shrink-0 w-12 h-12 rounded-xl bg-[oklch(var(--primary)/0.15)] border border-[oklch(var(--primary)/0.3)] flex items-center justify-center">
-                <Icon className="w-6 h-6 text-[oklch(var(--primary))]" />
+              <div className="shrink-0 w-12 h-12 rounded-xl bg-[oklch(0.82_0.13_195/0.15)] border border-[oklch(0.82_0.13_195/0.3)] flex items-center justify-center">
+                <Icon className="w-6 h-6 text-[oklch(0.82_0.13_195)]" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-[oklch(var(--foreground))] mb-2">
+                <h3 className="text-xl font-bold text-[oklch(0.96_0.01_240)] mb-2">
                   {title}
                 </h3>
-                <p className="text-[oklch(var(--muted-foreground))] leading-relaxed">
+                <p className="text-[oklch(0.72_0.04_240)] leading-relaxed">
                   {desc}
                 </p>
               </div>

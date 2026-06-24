@@ -35,10 +35,10 @@ export function ProblemSection() {
           className={`section-fade-in text-center mb-16 ${isVisible ? "visible" : ""}`}
         >
           <p className="eyebrow mb-4">The Problem</p>
-          <h2 className="text-4xl lg:text-5xl font-black text-foreground mb-6 tracking-tight">
+          <h2 className="text-4xl lg:text-5xl font-black text-[oklch(0.96_0.01_240)] mb-6 tracking-tight">
             Payroll Shouldn't Be This Hard
           </h2>
-          <p className="text-lg text-muted-foreground max-w-xl mx-auto">
+          <p className="text-lg text-[oklch(0.72_0.04_240)] max-w-xl mx-auto">
             UK employers lose millions each year to avoidable payroll errors,
             slow migrations, and compliance failures.
           </p>
@@ -52,13 +52,15 @@ export function ProblemSection() {
               key={title}
               className="glass-card glass-card-hover rounded-2xl p-6 lg:p-8"
             >
-              <div className="w-12 h-12 rounded-xl bg-destructive/15 border border-destructive/30 flex items-center justify-center mb-5">
-                <Icon className="w-6 h-6 text-destructive" />
+              <div className="w-12 h-12 rounded-xl bg-[oklch(0.65_0.18_25/0.15)] border border-[oklch(0.65_0.18_25/0.3)] flex items-center justify-center mb-5">
+                <Icon className="w-6 h-6 text-[oklch(0.65_0.18_25)]" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-3">
+              <h3 className="text-xl font-bold text-[oklch(0.96_0.01_240)] mb-3">
                 {title}
               </h3>
-              <p className="text-muted-foreground leading-relaxed">{desc}</p>
+              <p className="text-[oklch(0.72_0.04_240)] leading-relaxed">
+                {desc}
+              </p>
             </div>
           ))}
         </div>
