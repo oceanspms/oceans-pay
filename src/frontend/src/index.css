@@ -1,0 +1,267 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 1rem;
+    /* Oceans Pay dark theme tokens (OKLCH L C H) */
+    --background: 0.98 0.005 240;
+    --foreground: 0.15 0.03 240;
+    --card: 1 0 0;
+    --card-foreground: 0.15 0.03 240;
+    --popover: 1 0 0;
+    --popover-foreground: 0.15 0.03 240;
+    --primary: 0.55 0.18 255;
+    --primary-foreground: 1 0 0;
+    --secondary: 0.94 0.02 255;
+    --secondary-foreground: 0.15 0.03 255;
+    --muted: 0.92 0.015 255;
+    --muted-foreground: 0.5 0.04 255;
+    --accent: 0.55 0.18 255;
+    --accent-foreground: 1 0 0;
+    --destructive: 0.6 0.2 25;
+    --destructive-foreground: 1 0 0;
+    --border: 0.88 0.02 255;
+    --input: 0.88 0.02 255;
+    --ring: 0.55 0.18 255;
+    --chart-1: 0.55 0.18 255;
+    --chart-2: 0.65 0.16 220;
+    --chart-3: 0.6 0.2 25;
+    --chart-4: 0.62 0.12 210;
+    --chart-5: 0.55 0.1 250;
+    --sidebar: 0.96 0.01 240;
+    --sidebar-foreground: 0.15 0.03 240;
+    --sidebar-primary: 0.7 0.14 255;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.92 0.015 240;
+    --sidebar-accent-foreground: 0.15 0.03 240;
+    --sidebar-border: 0.88 0.02 240;
+    --sidebar-ring: 0.7 0.14 255;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    background: oklch(var(--card) / 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid oklch(var(--border) / 0.6);
+  }
+
+  .glass-card-hover {
+    transition: all 0.3s ease;
+  }
+
+  .glass-card-hover:hover {
+    background: oklch(var(--card) / 0.85);
+    border-color: oklch(var(--primary) / 0.4);
+    box-shadow: 0 0 30px oklch(var(--primary) / 0.12), 0 8px 40px
+      oklch(var(--foreground) / 0.08);
+    transform: translateY(-2px);
+  }
+
+  .btn-primary {
+    background: linear-gradient(
+      135deg,
+      oklch(var(--primary)),
+      oklch(var(--chart-2))
+    );
+    color: oklch(var(--primary-foreground));
+    font-weight: 700;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px oklch(var(--primary) / 0.3);
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 4px 32px oklch(var(--primary) / 0.55), 0 0 60px
+      oklch(var(--primary) / 0.2);
+    transform: translateY(-1px) scale(1.02);
+  }
+
+  .btn-outline {
+    background: transparent;
+    color: oklch(var(--primary));
+    border: 1.5px solid oklch(var(--primary) / 0.5);
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+  }
+
+  .btn-outline:hover {
+    background: oklch(var(--primary) / 0.08);
+    border-color: oklch(var(--primary));
+    box-shadow: 0 0 20px oklch(var(--primary) / 0.2);
+  }
+
+  .primary-glow {
+    color: oklch(var(--primary));
+    text-shadow: 0 0 30px oklch(var(--primary) / 0.4);
+  }
+
+  .section-fade-in {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .section-fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .radial-glow-hero {
+    background: radial-gradient(
+      ellipse 80% 60% at 50% 0%,
+      oklch(var(--primary) / 0.08) 0%,
+      transparent 70%
+    );
+  }
+
+  .radial-glow-cta {
+    background: radial-gradient(
+      ellipse 70% 60% at 50% 50%,
+      oklch(var(--primary) / 0.12) 0%,
+      transparent 70%
+    );
+  }
+
+  .eyebrow {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: oklch(var(--primary));
+  }
+
+  .gradient-text {
+    background: linear-gradient(
+      135deg,
+      oklch(var(--foreground)),
+      oklch(var(--primary))
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+/* Network animation canvas */
+#hero-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Pulsing play button */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+}
+
+.play-pulse {
+  animation: pulse-ring 2s ease-in-out infinite;
+}
+
+/* Staggered card entrance */
+@keyframes card-enter {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-stagger > * {
+  opacity: 0;
+}
+
+.card-stagger.visible > *:nth-child(1) {
+  animation: card-enter 0.5s ease forwards 0.1s;
+}
+.card-stagger.visible > *:nth-child(2) {
+  animation: card-enter 0.5s ease forwards 0.2s;
+}
+.card-stagger.visible > *:nth-child(3) {
+  animation: card-enter 0.5s ease forwards 0.3s;
+}
+.card-stagger.visible > *:nth-child(4) {
+  animation: card-enter 0.5s ease forwards 0.4s;
+}
+.card-stagger.visible > *:nth-child(5) {
+  animation: card-enter 0.5s ease forwards 0.5s;
+}
+.card-stagger.visible > *:nth-child(6) {
+  animation: card-enter 0.5s ease forwards 0.6s;
+}
+.card-stagger.visible > *:nth-child(7) {
+  animation: card-enter 0.5s ease forwards 0.7s;
+}
+.card-stagger.visible > *:nth-child(8) {
+  animation: card-enter 0.5s ease forwards 0.8s;
+}
+
+.dark {
+  --background: 0.08 0.025 240;
+  --foreground: 0.96 0.01 240;
+  --card: 0.13 0.035 240;
+  --card-foreground: 0.96 0.01 240;
+  --popover: 0.15 0.04 240;
+  --popover-foreground: 0.96 0.01 240;
+  --primary: 0.65 0.18 255;
+  --primary-foreground: 0.98 0.005 255;
+  --secondary: 0.18 0.045 255;
+  --secondary-foreground: 0.96 0.01 255;
+  --muted: 0.16 0.04 255;
+  --muted-foreground: 0.62 0.04 255;
+  --accent: 0.65 0.18 255;
+  --accent-foreground: 0.98 0.005 255;
+  --destructive: 0.65 0.18 25;
+  --destructive-foreground: 0.96 0.01 255;
+  --border: 0.22 0.05 255;
+  --input: 0.22 0.05 255;
+  --ring: 0.65 0.18 255;
+  --chart-1: 0.65 0.18 255;
+  --chart-2: 0.75 0.15 220;
+  --chart-3: 0.65 0.18 25;
+  --chart-4: 0.72 0.12 210;
+  --chart-5: 0.6 0.1 250;
+  --sidebar: 0.1 0.03 240;
+  --sidebar-foreground: 0.96 0.01 240;
+  --sidebar-primary: 0.82 0.13 255;
+  --sidebar-primary-foreground: 0.08 0.025 240;
+  --sidebar-accent: 0.16 0.04 240;
+  --sidebar-accent-foreground: 0.96 0.01 240;
+  --sidebar-border: 0.22 0.05 240;
+  --sidebar-ring: 0.82 0.13 255;
+}
