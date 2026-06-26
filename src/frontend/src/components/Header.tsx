@@ -1,4 +1,4 @@
-import { Menu, Waves, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export function Header() {
@@ -35,15 +35,13 @@ export function Header() {
             className="flex items-center gap-2.5 group"
             data-ocid="nav.link"
           >
-            <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[oklch(0.82_0.13_195)] to-[oklch(0.73_0.12_200)] flex items-center justify-center shadow-[0_0_16px_oklch(0.82_0.13_195/0.4)]">
-              <Waves
-                className="w-4 h-4 text-[oklch(0.08_0.025_240)]"
-                strokeWidth={2.5}
+            <div className="w-8 h-8 rounded-xl overflow-hidden bg-[oklch(0.96_0.01_240/0.9)] ring-1 ring-[oklch(0.25_0.05_240/0.35)] shadow-[0_0_16px_oklch(0.82_0.13_195/0.2)] flex items-center justify-center">
+              <img
+                src="/assets/logo.png"
+                alt="Oceans Pay logo"
+                className="h-6 w-6 object-contain"
               />
             </div>
-            <span className="text-[oklch(0.96_0.01_240)] font-bold text-lg tracking-tight">
-              OCEANS <span className="text-[oklch(0.82_0.13_195)]">PAY</span>
-            </span>
           </a>
 
           {/* Desktop nav */}
