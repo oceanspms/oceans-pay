@@ -1,0 +1,163 @@
+/* Approved UK Compliance hero: one borderless white canvas using the existing
+   copy and the approved connected compliance-checkpoint artwork. */
+.page-compliance-security .cs-hero {
+  box-sizing: border-box;
+  width: 100% !important;
+  max-width: none;
+  min-height: 640px;
+  height: clamp(640px, 46vw, 790px);
+  margin: 0 0 34px !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: #fff !important;
+  grid-template-columns: minmax(0, 44.75%) minmax(0, 55.25%) !important;
+  align-items: stretch;
+  display: grid;
+  overflow: hidden;
+  contain: paint;
+}
+
+.page-compliance-security .cs-hero-copy {
+  z-index: 2;
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: 0;
+  padding: 58px 34px 58px max(5.5vw, 48px) !important;
+  background: #fff !important;
+  justify-content: center;
+}
+
+.page-compliance-security .cs-hero h1 {
+  max-width: 730px;
+  margin: 30px 0 28px;
+  font-size: clamp(56px, 3.35vw, 64px) !important;
+  line-height: 1.06;
+}
+
+.page-compliance-security .cs-hero h1 em {
+  color: var(--brass) !important;
+  font-style: italic !important;
+  display: block;
+}
+
+.page-compliance-security .cs-hero-copy > p {
+  max-width: 640px;
+  font-size: 16px;
+  line-height: 1.72;
+}
+
+.page-compliance-security .cs-actions {
+  gap: 42px;
+  margin-top: 30px;
+}
+
+.page-compliance-security .cs-hero-art {
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  aspect-ratio: auto;
+  background: #fff !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-compliance-security .cs-hero-art::before {
+  display: none !important;
+}
+
+.page-compliance-security .cs-hero-art img {
+  display: block !important;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  max-height: none;
+  padding: 0;
+  object-fit: contain;
+  object-position: center;
+  background: #fff;
+  filter: none;
+  transform: none;
+}
+
+@media (max-width: 1100px) {
+  .page-compliance-security .cs-hero {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    margin: 0 0 34px !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    display: block;
+  }
+
+  .page-compliance-security .cs-hero-copy {
+    height: auto;
+    padding: 52px 40px 34px !important;
+    justify-content: flex-start;
+  }
+
+  .page-compliance-security .cs-hero h1 {
+    max-width: 760px;
+    font-size: clamp(50px, 7vw, 66px) !important;
+  }
+
+  .page-compliance-security .cs-hero-copy > p {
+    max-width: 720px;
+  }
+
+  .page-compliance-security .cs-hero-art {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+  }
+}
+
+@media (max-width: 700px) {
+  .page-compliance-security .cs-hero {
+    margin-bottom: 28px !important;
+  }
+
+  .page-compliance-security .cs-hero-copy {
+    padding: 38px 24px 28px !important;
+  }
+
+  .page-compliance-security .cs-hero h1 {
+    margin: 25px 0 24px;
+    font-size: clamp(42px, 11vw, 52px) !important;
+    line-height: 1.04;
+  }
+
+  .page-compliance-security .cs-hero-copy > p {
+    font-size: 14px;
+    line-height: 1.68;
+  }
+
+  .page-compliance-security .cs-actions {
+    gap: 14px;
+    margin-top: 27px;
+  }
+
+  .page-compliance-security .cs-hero-art {
+    aspect-ratio: 3 / 2;
+  }
+}
+
+@media (max-width: 420px) {
+  .page-compliance-security .cs-hero-copy {
+    padding-inline: 20px !important;
+  }
+
+  .page-compliance-security .cs-hero h1 {
+    font-size: clamp(39px, 11.2vw, 47px) !important;
+  }
+
+  .page-compliance-security .cs-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

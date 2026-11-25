@@ -1,0 +1,258 @@
+/* Ocean Across readability and contrast pass.
+   Hero headlines retain the approved scale; supporting UI, grids and process
+   components are raised to a dependable reading size across the site. */
+
+.eyebrow,
+.aud-label,
+.ai2-label,
+.rev-label,
+.mig-label,
+.cs-label,
+.dm-label,
+.bd-label,
+.connections-label {
+  font-size: 13px !important;
+  line-height: 1.5 !important;
+  letter-spacing: .13em !important;
+}
+
+.hero-copy-inner > small,
+.rev-hero-copy > small,
+.connections-hero-copy > small,
+.platform-hero-copy .hero-copy-inner > small,
+.ai-payroll-hero-copy .hero-copy-inner > small,
+.compliance-gateway-copy .hero-copy-inner > small,
+.demos-theatre-copy .hero-copy-inner > small,
+.contact-atelier-copy .hero-copy-inner > small {
+  font-size: 13px !important;
+  line-height: 1.6 !important;
+}
+
+.button,
+.text-link,
+.rev-link,
+.aud-text-link {
+  font-size: 15px !important;
+}
+
+/* Compact overview strips: clear, deliberate UI text rather than captions. */
+.rev-trust span,
+.rev-process-line span,
+.rev-migration-line span,
+.rev-tag-grid span,
+.mig-stage-rail span,
+.cs-rule-grid b,
+.cs-audit-list span,
+.aud-employer > ul li,
+.aud-scale-band li,
+.rev-platform-groups li {
+  font-size: 14px !important;
+  line-height: 1.55 !important;
+}
+
+.rev-intro-split > div:last-child > p,
+.rev-two-col > div:last-child > p,
+.aud-model-grid p,
+.aud-status-grid p,
+.aud-team-grid p,
+.ai2-review span,
+.ai2-platform-grid p,
+.cs-six-grid p,
+.cs-four-grid p,
+.cs-data-grid p,
+.cs-evidence-grid p,
+.mig-data-grid p,
+.mig-ready-grid p,
+.dm-card-copy > p,
+.bd-show-grid p,
+.bd-steps p,
+.rev-platform-groups p {
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+}
+
+.ai2-review small {
+  font-size: 13px !important;
+  letter-spacing: .12em !important;
+}
+
+.rev-steps p,
+.rev-mini-cards p,
+.rev-demo-cards p,
+.feature-rows p,
+.editorial-list p,
+.solution-points p,
+.video-grid p,
+.credential-grid p,
+.process-grid p,
+.ai-points p,
+.security-pillars p,
+.security-note,
+.readiness-grid p,
+.early-access aside p,
+.connections-roadmap-note {
+  font-size: 14px !important;
+  line-height: 1.7 !important;
+}
+
+.solution-points span,
+.video-placeholder > span,
+.video-placeholder > em,
+.video-grid article > small,
+.testimonial-grid small,
+.ai-points article > span,
+.compliance-lines b,
+.readiness-grid span,
+.demo-screen > span,
+.demo-screen > em,
+.early-access-grid > div > small,
+.early-access aside > span,
+.launch-metrics span,
+.metrics-note,
+.rev-capability-grid article > small,
+.rev-mini-cards small,
+.rev-migration-line b,
+.rev-audience-grid article > div span,
+.rev-demo-cards article > span,
+.mig-data-grid > article > span,
+.mig-ready-grid span,
+.mig-audience-grid article > span,
+.dm-card-copy > span,
+.bd-show-grid b,
+.bd-steps b,
+.connections-flow article > b,
+.connections-category-grid li b {
+  font-size: 12px !important;
+  line-height: 1.5 !important;
+}
+
+/* These are the two dark-green scale panels shown in the review captures.
+   The previous component rules left dark ink over the forest background. */
+.aud-scale-band,
+.rev-scale-band {
+  background: #0d3c32 !important;
+  color: #f8f5ed !important;
+}
+
+.aud-scale-band h2,
+.aud-scale-band h3,
+.rev-scale-band h2,
+.rev-scale-band h3 {
+  color: #fffaf0 !important;
+}
+
+.aud-scale-band p,
+.aud-scale-band li,
+.rev-scale-band p {
+  color: #dce7e2 !important;
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+}
+
+.aud-scale-band .aud-label,
+.rev-scale-band .rev-label,
+.aud-scale-band .aud-text-link {
+  color: #e2b968 !important;
+}
+
+.aud-scale-band li,
+.rev-scale-band .rev-tag-grid span {
+  border-color: rgba(255,255,255,.2) !important;
+}
+
+.rev-scale-band .rev-tag-grid span {
+  color: #f6f1e7 !important;
+  background: rgba(255,255,255,.035) !important;
+}
+
+/* Preserve the same high-contrast hierarchy on every other forest panel. */
+.rev-dark h2,
+.rev-dark h3,
+.ai2-dark h2,
+.ai2-dark h3,
+.cs-dark h2,
+.cs-dark h3,
+.dm-personal h2,
+.dm-personal h3 {
+  color: #fffaf0 !important;
+}
+
+.rev-dark p,
+.rev-dark li,
+.ai2-dark p,
+.ai2-dark li,
+.cs-dark p,
+.cs-dark li,
+.dm-personal p,
+.dm-personal li {
+  color: #dce7e2 !important;
+}
+
+.footer-links a,
+.site-footer p,
+.site-footer .footer-bottom {
+  font-size: 14px !important;
+  line-height: 1.65 !important;
+}
+
+.demo-form label,
+.bd-form > label,
+.bd-field-row label,
+.bd-form fieldset,
+.bd-checks label {
+  font-size: 14px !important;
+}
+
+input,
+select,
+textarea {
+  font-size: 16px !important;
+}
+
+@media (max-width: 760px) {
+  .desktop-nav a,
+  .mobile-drawer a {
+    font-size: 15px !important;
+  }
+
+  .hero-copy-inner > small,
+  .rev-hero-copy > small,
+  .connections-hero-copy > small {
+    font-size: 12px !important;
+  }
+
+  .rev-trust span,
+  .rev-process-line span,
+  .rev-migration-line span,
+  .rev-tag-grid span,
+  .mig-stage-rail span,
+  .cs-rule-grid b,
+  .cs-audit-list span,
+  .aud-employer > ul li,
+  .aud-scale-band li,
+  .rev-platform-groups li {
+    font-size: 15px !important;
+  }
+
+  .rev-intro-split > div:last-child > p,
+  .rev-two-col > div:last-child > p,
+  .aud-model-grid p,
+  .aud-status-grid p,
+  .aud-team-grid p,
+  .ai2-review span,
+  .ai2-platform-grid p,
+  .cs-six-grid p,
+  .cs-four-grid p,
+  .cs-data-grid p,
+  .cs-evidence-grid p,
+  .mig-data-grid p,
+  .mig-ready-grid p,
+  .dm-card-copy > p,
+  .bd-show-grid p,
+  .bd-steps p,
+  .rev-platform-groups p,
+  .aud-scale-band p,
+  .rev-scale-band p {
+    font-size: 16px !important;
+  }
+}

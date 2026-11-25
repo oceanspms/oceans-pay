@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="670" viewBox="0 0 1080 670">
+  <defs>
+    <linearGradient id="hubGreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16584a"/>
+      <stop offset="1" stop-color="#0b332b"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e7cb83"/>
+      <stop offset=".45" stop-color="#b78936"/>
+      <stop offset="1" stop-color="#7f5a1f"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffdf8"/>
+      <stop offset="1" stop-color="#f2ecdf"/>
+    </linearGradient>
+  </defs>
+  <path d="M476 335C398 264 337 232 249 222M476 335C397 405 336 447 241 458M594 335C682 264 742 232 837 222M594 335C681 407 744 447 839 458" fill="none" stroke="#c49a4d" stroke-width="3"/>
+  <g fill="#b78936">
+    <circle cx="395" cy="272" r="7"/><circle cx="334" cy="241" r="5"/>
+    <circle cx="395" cy="397" r="7"/><circle cx="330" cy="431" r="5"/>
+    <circle cx="675" cy="270" r="7"/><circle cx="742" cy="238" r="5"/>
+    <circle cx="676" cy="401" r="7"/><circle cx="747" cy="433" r="5"/>
+  </g>
+  <g transform="translate(38 150) rotate(-3 125 70)">
+    <rect width="250" height="140" rx="18" fill="#e7dec9" opacity=".78" transform="translate(8 10)"/>
+    <rect width="250" height="140" rx="18" fill="url(#card)" stroke="#ceb98d" stroke-width="2"/>
+    <circle cx="50" cy="51" r="26" fill="#f5f0e4" stroke="#123f35" stroke-width="2"/>
+    <path d="M36 53h28M40 46h20M44 39h12" stroke="#123f35" stroke-width="2.4" stroke-linecap="round"/>
+    <text x="91" y="60" font-family="Georgia,serif" font-size="28" fill="#17221e">Pensions</text>
+    <line x1="91" y1="78" x2="219" y2="78" stroke="#d3c8af"/>
+    <circle cx="212" cy="108" r="10" fill="#123f35"/><path d="m207 108 4 4 7-9" fill="none" stroke="#fff" stroke-width="2"/>
+  </g>
+  <g transform="translate(26 392) rotate(3 125 70)">
+    <rect width="250" height="140" rx="18" fill="#e7dec9" opacity=".78" transform="translate(8 10)"/>
+    <rect width="250" height="140" rx="18" fill="url(#card)" stroke="#ceb98d" stroke-width="2"/>
+    <circle cx="50" cy="51" r="26" fill="#f5f0e4" stroke="#123f35" stroke-width="2"/>
+    <rect x="36" y="38" width="28" height="25" rx="3" fill="none" stroke="#123f35" stroke-width="2.2"/>
+    <path d="M42 45h16M42 51h16M42 57h10" stroke="#123f35" stroke-width="2"/>
+    <text x="91" y="60" font-family="Georgia,serif" font-size="28" fill="#17221e">Accounting</text>
+    <line x1="91" y1="78" x2="219" y2="78" stroke="#d3c8af"/>
+    <circle cx="212" cy="108" r="10" fill="#123f35"/><path d="m207 108 4 4 7-9" fill="none" stroke="#fff" stroke-width="2"/>
+  </g>
+  <g transform="translate(785 150) rotate(3 125 70)">
+    <rect width="250" height="140" rx="18" fill="#e7dec9" opacity=".78" transform="translate(8 10)"/>
+    <rect width="250" height="140" rx="18" fill="url(#card)" stroke="#ceb98d" stroke-width="2"/>
+    <circle cx="50" cy="51" r="26" fill="#f5f0e4" stroke="#123f35" stroke-width="2"/>
+    <circle cx="50" cy="50" r="14" fill="none" stroke="#123f35" stroke-width="2.2"/>
+    <text x="50" y="57" font-family="Georgia,serif" font-size="18" font-weight="700" fill="#123f35" text-anchor="middle">£</text>
+    <text x="91" y="60" font-family="Georgia,serif" font-size="28" fill="#17221e">Payments</text>
+    <line x1="91" y1="78" x2="219" y2="78" stroke="#d3c8af"/>
+    <circle cx="212" cy="108" r="10" fill="#123f35"/><path d="m207 108 4 4 7-9" fill="none" stroke="#fff" stroke-width="2"/>
+  </g>
+  <g transform="translate(797 392) rotate(-3 125 70)">
+    <rect width="250" height="140" rx="18" fill="#e7dec9" opacity=".78" transform="translate(8 10)"/>
+    <rect width="250" height="140" rx="18" fill="url(#card)" stroke="#ceb98d" stroke-width="2"/>
+    <circle cx="50" cy="51" r="26" fill="#f5f0e4" stroke="#123f35" stroke-width="2"/>
+    <circle cx="50" cy="45" r="7" fill="none" stroke="#123f35" stroke-width="2.2"/>
+    <path d="M39 63c2-9 20-9 22 0" fill="none" stroke="#123f35" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="91" y="60" font-family="Georgia,serif" font-size="28" fill="#17221e">HR &amp; time</text>
+    <line x1="91" y1="78" x2="219" y2="78" stroke="#d3c8af"/>
+    <circle cx="212" cy="108" r="10" fill="#123f35"/><path d="m207 108 4 4 7-9" fill="none" stroke="#fff" stroke-width="2"/>
+  </g>
+  <circle cx="535" cy="335" r="132" fill="#f7f2e8" stroke="url(#gold)" stroke-width="5"/>
+  <circle cx="535" cy="335" r="110" fill="url(#hubGreen)" stroke="#ddbd70" stroke-width="8"/>
+  <circle cx="535" cy="335" r="82" fill="none" stroke="#d4ad5b" stroke-opacity=".46" stroke-width="2"/>
+  <circle cx="535" cy="335" r="61" fill="#0f463b" stroke="url(#gold)" stroke-width="9"/>
+  <text x="535" y="363" font-family="Georgia,serif" font-size="86" fill="#fff8e7" text-anchor="middle">£</text>
+  <text x="535" y="185" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2.2" fill="#123f35" text-anchor="middle">ONE SOURCE OF TRUTH</text>
+</svg>

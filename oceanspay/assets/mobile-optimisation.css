@@ -1,0 +1,267 @@
+/* Final responsive pass — shared by every Ocean Across page. */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+svg,
+video,
+iframe {
+  max-width: 100%;
+}
+
+.site-header .logo,
+.mobile-drawer-head .logo,
+.site-footer .logo {
+  flex: 0 0 auto;
+}
+
+.site-header .logo img,
+.mobile-drawer-head .logo img {
+  width: 244px !important;
+  max-width: min(244px, 56vw) !important;
+  height: auto !important;
+}
+
+.site-footer .logo img {
+  width: 272px !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 1100px) {
+  .site-header .desktop-nav,
+  .site-header .header-actions {
+    display: none !important;
+  }
+
+  .site-header .mobile-menu-trigger {
+    display: grid !important;
+  }
+
+  .site-header .header-inner {
+    grid-template-columns: minmax(0, 1fr) auto !important;
+    gap: 16px !important;
+  }
+}
+
+@media (max-width: 760px) {
+  :root {
+    --header-height: 72px;
+    --gutter-mobile: 16px;
+  }
+
+  body {
+    min-width: 0;
+  }
+
+  .shell,
+  .header-inner,
+  .footer-inner,
+  .footer-bottom {
+    width: calc(100% - 32px) !important;
+    max-width: none !important;
+  }
+
+  .site-header .logo img,
+  .mobile-drawer-head .logo img {
+    width: 210px !important;
+    max-width: 63vw !important;
+  }
+
+  .mobile-drawer {
+    width: min(88vw, 360px) !important;
+    max-width: 100% !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  p,
+  a,
+  button,
+  label,
+  input,
+  select,
+  textarea {
+    overflow-wrap: anywhere;
+  }
+
+  .button,
+  button,
+  input,
+  select,
+  textarea {
+    min-height: 44px;
+  }
+
+  .button {
+    max-width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .site-footer .footer-grid,
+  .site-footer .footer-inner,
+  .site-footer .footer-bottom,
+  .legal-grid,
+  .contact-grid,
+  .form-grid,
+  .field-row {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .site-footer .footer-bottom {
+    align-items: flex-start !important;
+    gap: 10px !important;
+  }
+
+  .site-footer .logo img {
+    width: 248px !important;
+  }
+
+  /* Approved hero canvases remain intact, but scale naturally on phones. */
+  .platform-hero,
+  .aud-hero,
+  .ai2-hero,
+  .mig-hero,
+  .cs-hero,
+  .connections-hero,
+  .dm-hero,
+  .bd-hero-grid {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  .platform-hero-copy,
+  .aud-hero-copy,
+  .ai2-hero-copy,
+  .mig-hero-copy,
+  .cs-hero-copy,
+  .connections-hero-copy,
+  .dm-hero-copy,
+  .bd-hero-copy {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  .platform-control-visual,
+  .aud-hero-art,
+  .ai2-art,
+  .mig-hero-art,
+  .cs-hero-art,
+  .connections-network,
+  .dm-hero-art,
+  .bd-hero-art {
+    min-height: 0 !important;
+    height: auto !important;
+    aspect-ratio: auto !important;
+    overflow: hidden !important;
+  }
+
+  .platform-control-visual img,
+  .aud-hero-art img,
+  .ai2-art img,
+  .mig-hero-art img,
+  .cs-hero-art img,
+  .connections-network img,
+  .dm-hero-art img,
+  .bd-hero-art img {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    transform: none !important;
+  }
+
+  .platform-actions,
+  .aud-hero-actions,
+  .ai2-actions,
+  .mig-actions,
+  .cs-actions,
+  .connections-actions,
+  .dm-actions,
+  .bd-actions,
+  .hero-actions,
+  .cta-actions,
+  .sitewide-cta-actions {
+    width: 100%;
+    align-items: stretch !important;
+    flex-direction: column !important;
+  }
+
+  .platform-actions .button,
+  .aud-hero-actions .button,
+  .ai2-actions .button,
+  .mig-actions .button,
+  .cs-actions .button,
+  .connections-actions .button,
+  .dm-actions .button,
+  .bd-actions .button,
+  .hero-actions .button,
+  .cta-actions .button {
+    width: 100%;
+  }
+
+  /* Homepage keeps its photographic composition and readable overlay cards. */
+  .unified-hero-home {
+    border: 0 !important;
+    border-radius: 0 !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .unified-hero-home .hero-art {
+    min-height: 690px !important;
+    height: 690px !important;
+  }
+
+  .unified-hero-home .hero-art > img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: 68% center !important;
+  }
+
+  .bd-form,
+  .contact-form,
+  form {
+    max-width: 100%;
+  }
+
+  .bd-form {
+    padding: 24px 18px !important;
+  }
+
+  table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .site-header .logo img,
+  .mobile-drawer-head .logo img {
+    width: 194px !important;
+  }
+
+  .platform-hero h1,
+  .aud-hero h1,
+  .ai2-hero h1,
+  .mig-hero h1,
+  .cs-hero h1,
+  .connections-hero h1,
+  .dm-hero h1,
+  .bd-hero h1 {
+    font-size: clamp(36px, 11vw, 44px) !important;
+    line-height: 1.02 !important;
+  }
+}
+

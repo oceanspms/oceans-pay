@@ -1,0 +1,594 @@
+/*
+ * Ocean Across visual consistency layer
+ * Reference: Connections page (kept unchanged as the canonical visual standard).
+ * Scope: presentation only — no content, structure, navigation or behaviour changes.
+ */
+
+:root {
+  --site-reference-gold: var(--gold, var(--brass));
+  --site-reference-hero: var(--hero-neutral-matte, #f4f0e9);
+}
+
+main:not(.page-connections) {
+  background: var(--paper);
+}
+
+/* Hero surfaces and spacing */
+main:not(.page-connections) :is(
+  .unified-hero,
+  .platform-hero,
+  .aud-hero,
+  .ai2-hero,
+  .mig-hero,
+  .cs-hero,
+  .dm-hero,
+  .bd-hero-grid,
+  .split-hero
+) {
+  background: var(--site-reference-hero);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  min-height: 680px;
+  margin-block: 30px 34px;
+  overflow: hidden;
+}
+
+main:not(.page-connections) :is(
+  .unified-hero-copy,
+  .platform-hero-copy,
+  .aud-hero-copy,
+  .ai2-hero-copy,
+  .mig-hero-copy,
+  .cs-hero-copy,
+  .dm-hero-copy,
+  .bd-hero-copy,
+  .hero-copy-panel
+) {
+  padding: 74px clamp(42px, 5vw, 76px);
+}
+
+main:not(.page-connections) :is(
+  .unified-hero,
+  .platform-hero,
+  .aud-hero,
+  .ai2-hero,
+  .mig-hero,
+  .cs-hero,
+  .dm-hero,
+  .bd-hero-grid,
+  .split-hero
+) h1 {
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: clamp(49px, 4.2vw, 68px);
+  font-weight: 400;
+  letter-spacing: -.05em;
+  line-height: 1.03;
+}
+
+main:not(.page-connections) :is(
+  .unified-hero,
+  .platform-hero,
+  .aud-hero,
+  .ai2-hero,
+  .mig-hero,
+  .cs-hero,
+  .dm-hero,
+  .bd-hero-grid,
+  .split-hero
+) h1 em {
+  color: var(--site-reference-gold);
+  font-style: italic;
+}
+
+main:not(.page-connections) :is(
+  .unified-hero-copy,
+  .platform-hero-copy,
+  .aud-hero-copy,
+  .ai2-hero-copy,
+  .mig-hero-copy,
+  .cs-hero-copy,
+  .dm-hero-copy,
+  .bd-hero-copy,
+  .hero-copy-panel
+) > p,
+main:not(.page-connections) .hero-copy-inner > p {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.72;
+}
+
+/* Eyebrows and section labels */
+main:not(.page-connections) :is(
+  .eyebrow,
+  .rev-label,
+  .aud-label,
+  .ai2-label,
+  .mig-label,
+  .cs-label,
+  .dm-label,
+  .bd-label
+) {
+  color: var(--site-reference-gold);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .13em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+/* Connections-page section rhythm applied site-wide */
+main:not(.page-connections) :is(
+  .rev-section,
+  .aud-section,
+  .ai2-section,
+  .mig-section,
+  .cs-section,
+  .dm-section,
+  .bd-section,
+  .legal-content
+) {
+  padding-block: 104px;
+}
+
+main:not(.page-connections) :is(
+  .rev-soft,
+  .aud-soft,
+  .ai2-soft,
+  .mig-soft,
+  .cs-soft,
+  .dm-soft,
+  .bd-book
+) {
+  background: var(--sage);
+}
+
+main:not(.page-connections) :is(
+  .rev-dark,
+  .ai2-dark,
+  .mig-dark,
+  .cs-dark,
+  .dm-personal
+) {
+  background: var(--forest);
+  color: var(--white);
+}
+
+main:not(.page-connections) :is(
+  .rev-dark,
+  .ai2-dark,
+  .mig-dark,
+  .cs-dark,
+  .dm-personal
+) :is(h2, h3) {
+  color: var(--white);
+}
+
+main:not(.page-connections) :is(
+  .rev-dark,
+  .ai2-dark,
+  .mig-dark,
+  .cs-dark,
+  .dm-personal
+) p {
+  color: var(--text-on-dark-muted);
+}
+
+/* Type scale and text rhythm */
+main:not(.page-connections) h2 {
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: clamp(40px, 4vw, 58px);
+  font-weight: 400;
+  letter-spacing: -.04em;
+  line-height: 1.08;
+}
+
+main:not(.page-connections) h3 {
+  color: var(--forest);
+  font-family: var(--display);
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+main:not(.page-connections) p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+main:not(.page-connections) :is(
+  .rev-centered-head,
+  .aud-centered-heading,
+  .ai2-heading,
+  .mig-heading,
+  .cs-heading,
+  .dm-heading,
+  .bd-head
+) > p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+main:not(.page-connections) .legal-content h2 {
+  font-size: clamp(28px, 3vw, 36px);
+}
+
+main:not(.page-connections) .legal-content p,
+main:not(.page-connections) .legal-content li {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Card and information surfaces */
+main:not(.page-connections) :is(
+  .rev-mini-cards,
+  .rev-capability-grid,
+  .rev-demo-cards,
+  .aud-choice-grid,
+  .aud-model-grid,
+  .aud-status-grid,
+  .aud-strength-grid,
+  .aud-team-grid,
+  .ai2-control-grid,
+  .ai2-four-grid,
+  .ai2-platform-grid,
+  .mig-data-grid,
+  .mig-audience-grid,
+  .mig-ready-grid,
+  .cs-rule-grid,
+  .cs-six-grid,
+  .cs-four-grid,
+  .cs-data-grid,
+  .cs-evidence-grid,
+  .bd-show-grid,
+  .bd-steps,
+  .dm-card
+) :is(article, .dm-card-copy) {
+  background: var(--white);
+  border-color: var(--line);
+}
+
+main:not(.page-connections) :is(
+  .aud-choice-grid,
+  .aud-model-grid,
+  .aud-status-grid,
+  .aud-strength-grid,
+  .aud-team-grid,
+  .ai2-control-grid,
+  .ai2-four-grid,
+  .ai2-platform-grid,
+  .mig-data-grid,
+  .mig-audience-grid,
+  .mig-ready-grid
+) > article {
+  border-radius: 14px;
+}
+
+/* Final call-to-action cards match the Connections page */
+main:not(.page-connections) :is(
+  .rev-final,
+  .aud-final,
+  .ai2-final,
+  .mig-final,
+  .cs-final,
+  .dm-final,
+  .bd-final
+) {
+  background: var(--paper);
+  border-top: 1px solid var(--line);
+  padding-block: 104px;
+}
+
+main:not(.page-connections) :is(
+  .rev-final,
+  .aud-final,
+  .ai2-final,
+  .mig-final,
+  .cs-final,
+  .dm-final,
+  .bd-final
+) > .shell {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--site-reference-gold) 18%, var(--paper)),
+    var(--white)
+  );
+  border: 1px solid color-mix(in srgb, var(--site-reference-gold) 32%, var(--line));
+  border-radius: 20px;
+  padding: 68px clamp(28px, 6vw, 80px);
+}
+
+main:not(.page-connections) :is(
+  .rev-final,
+  .aud-final,
+  .ai2-final,
+  .mig-final,
+  .cs-final,
+  .dm-final,
+  .bd-final
+) h2 {
+  font-size: clamp(40px, 4vw, 58px);
+}
+
+main:not(.page-connections) :is(
+  .rev-final,
+  .aud-final,
+  .ai2-final,
+  .mig-final,
+  .cs-final,
+  .dm-final,
+  .bd-final
+) p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+@media (max-width: 760px) {
+  main:not(.page-connections) :is(
+    .unified-hero,
+    .platform-hero,
+    .aud-hero,
+    .ai2-hero,
+    .mig-hero,
+    .cs-hero,
+    .dm-hero,
+    .bd-hero-grid,
+    .split-hero
+  ) {
+    border-radius: 14px;
+    min-height: 0;
+    margin-top: 12px;
+  }
+
+  main:not(.page-connections) :is(
+    .unified-hero-copy,
+    .platform-hero-copy,
+    .aud-hero-copy,
+    .ai2-hero-copy,
+    .mig-hero-copy,
+    .cs-hero-copy,
+    .dm-hero-copy,
+    .bd-hero-copy,
+    .hero-copy-panel
+  ) {
+    padding: 38px 24px;
+  }
+
+  main:not(.page-connections) :is(
+    .unified-hero,
+    .platform-hero,
+    .aud-hero,
+    .ai2-hero,
+    .mig-hero,
+    .cs-hero,
+    .dm-hero,
+    .bd-hero-grid,
+    .split-hero
+  ) h1 {
+    font-size: clamp(42px, 12vw, 50px);
+  }
+
+  main:not(.page-connections) :is(
+    .unified-hero-copy,
+    .platform-hero-copy,
+    .aud-hero-copy,
+    .ai2-hero-copy,
+    .mig-hero-copy,
+    .cs-hero-copy,
+    .dm-hero-copy,
+    .bd-hero-copy,
+    .hero-copy-panel
+  ) > p,
+  main:not(.page-connections) .hero-copy-inner > p {
+    font-size: 14px;
+  }
+
+  main:not(.page-connections) :is(
+    .rev-section,
+    .aud-section,
+    .ai2-section,
+    .mig-section,
+    .cs-section,
+    .dm-section,
+    .bd-section,
+    .legal-content
+  ) {
+    padding-block: 72px;
+  }
+
+  main:not(.page-connections) h2,
+  main:not(.page-connections) :is(
+    .rev-final,
+    .aud-final,
+    .ai2-final,
+    .mig-final,
+    .cs-final,
+    .dm-final,
+    .bd-final
+  ) h2 {
+    font-size: 38px;
+  }
+
+  main:not(.page-connections) :is(
+    .rev-final,
+    .aud-final,
+    .ai2-final,
+    .mig-final,
+    .cs-final,
+    .dm-final,
+    .bd-final
+  ) {
+    padding-block: 72px;
+  }
+
+  main:not(.page-connections) :is(
+    .rev-final,
+    .aud-final,
+    .ai2-final,
+    .mig-final,
+    .cs-final,
+    .dm-final,
+    .bd-final
+  ) > .shell {
+    border-radius: 16px;
+    padding: 46px 22px;
+  }
+}
+
+/* Unified site-wide CTA component */
+.sitewide-cta {
+  width: 100%;
+  background: var(--paper) !important;
+  border-top: 1px solid var(--line) !important;
+  padding-block: 104px !important;
+}
+
+.sitewide-cta > .sitewide-cta-card {
+  box-sizing: border-box;
+  display: grid !important;
+  min-height: 360px;
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--site-reference-gold) 18%, var(--paper)),
+    var(--white)
+  ) !important;
+  border: 1px solid color-mix(in srgb, var(--site-reference-gold) 32%, var(--line)) !important;
+  border-radius: 20px !important;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 400px) !important;
+  align-items: center !important;
+  gap: clamp(48px, 6vw, 84px) !important;
+  margin-inline: auto;
+  padding: 58px clamp(42px, 5.4vw, 72px) !important;
+  text-align: left !important;
+}
+
+.sitewide-cta-copy {
+  max-width: 700px;
+  min-width: 0;
+}
+
+.sitewide-cta .sitewide-cta-copy h2 {
+  max-width: 700px;
+  color: var(--ink) !important;
+  font-family: var(--display);
+  font-size: clamp(42px, 4vw, 52px) !important;
+  font-weight: 400;
+  letter-spacing: -.04em;
+  line-height: 1.05;
+  margin: 0;
+}
+
+.sitewide-cta .sitewide-cta-copy :is(
+  .rev-label,
+  .aud-label,
+  .ai2-label,
+  .mig-label,
+  .cs-label,
+  .dm-label,
+  .bd-label
+) + h2 {
+  margin-top: 18px;
+}
+
+.sitewide-cta .sitewide-cta-copy p {
+  max-width: 650px;
+  color: var(--muted) !important;
+  font-size: 16px !important;
+  line-height: 1.7 !important;
+  margin: 18px 0 0 !important;
+}
+
+.sitewide-cta .sitewide-cta-copy p + p {
+  margin-top: 6px !important;
+}
+
+.sitewide-cta .sitewide-cta-actions {
+  width: 100%;
+  max-width: 300px;
+  min-width: 0;
+  display: flex !important;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  gap: 16px !important;
+  margin: 0 !important;
+  justify-self: end;
+}
+
+.sitewide-cta .sitewide-cta-actions > :is(.button, .text-link, .rev-link) {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 50px;
+  flex: 0 0 auto;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center;
+  margin: 0 !important;
+}
+
+.sitewide-cta .sitewide-cta-actions > small {
+  order: 0;
+  width: 100%;
+  color: var(--muted);
+  font-size: 12px;
+  text-align: left;
+}
+
+@media (max-width: 1024px) {
+  .sitewide-cta > .sitewide-cta-card {
+    min-height: 360px;
+    grid-template-columns: 1fr !important;
+    align-content: center;
+    gap: 36px !important;
+  }
+
+  .sitewide-cta .sitewide-cta-actions {
+    justify-content: flex-start;
+    justify-self: start;
+  }
+
+  .sitewide-cta .sitewide-cta-actions > small {
+    text-align: left;
+  }
+}
+
+@media (max-width: 700px) {
+  .sitewide-cta {
+    padding-block: 72px !important;
+  }
+
+  .sitewide-cta > .sitewide-cta-card {
+    min-height: 0;
+    border-radius: 16px !important;
+    gap: 30px !important;
+    padding: 42px 24px !important;
+  }
+
+  .sitewide-cta .sitewide-cta-copy h2 {
+    font-size: 38px !important;
+  }
+
+  .sitewide-cta .sitewide-cta-actions {
+    width: 100%;
+    max-width: none;
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .sitewide-cta .sitewide-cta-actions > .button {
+    width: 100%;
+  }
+
+  .sitewide-cta .sitewide-cta-actions > :is(.text-link, .rev-link) {
+    width: max-content;
+  }
+
+  .sitewide-cta .sitewide-cta-actions > small {
+    order: 0;
+    text-align: left;
+  }
+}

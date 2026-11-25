@@ -1,0 +1,174 @@
+/* Approved Demos hero: one full-width white canvas with the existing copy
+   and the approved product-theatre artwork. */
+.page-demos2 .dm-hero {
+  box-sizing: border-box;
+  width: 100% !important;
+  max-width: none;
+  min-height: 640px;
+  height: clamp(640px, 46vw, 790px);
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: #fff !important;
+  grid-template-columns: minmax(0, 44.75%) minmax(0, 55.25%) !important;
+  align-items: stretch;
+  display: grid;
+  overflow: hidden;
+  contain: paint;
+}
+
+.page-demos2 .dm-hero-copy {
+  z-index: 2;
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: 0;
+  padding: 52px 34px 50px max(5.5vw, 48px) !important;
+  background: #fff !important;
+  justify-content: center;
+}
+
+.page-demos2 .dm-hero h1 {
+  max-width: 720px;
+  margin: 28px 0 26px;
+  font-size: clamp(52px, 3.15vw, 60px) !important;
+  line-height: 1.06;
+}
+
+.page-demos2 .dm-hero h1 em {
+  color: var(--brass) !important;
+  font-style: italic !important;
+  font-weight: 400;
+  display: block;
+}
+
+.page-demos2 .dm-hero-copy > p {
+  max-width: 660px;
+  font-size: 16px;
+  line-height: 1.72;
+}
+
+.page-demos2 .dm-actions {
+  margin-top: 31px;
+}
+
+.page-demos2 .dm-hero-art {
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: #fff !important;
+  position: relative;
+  overflow: hidden;
+  box-shadow: none !important;
+}
+
+.page-demos2 .dm-hero-art::before,
+.page-demos2 .dm-hero-art::after {
+  display: none !important;
+}
+
+.page-demos2 .dm-hero-art img {
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  max-height: none;
+  padding: 18px 2.5vw 18px 0;
+  object-fit: contain;
+  object-position: center;
+  background: #fff !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+@media (max-width: 1100px) {
+  .page-demos2 .dm-hero {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    margin: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    display: block;
+  }
+
+  .page-demos2 .dm-hero-copy {
+    height: auto;
+    padding: 52px 40px 34px !important;
+    justify-content: flex-start;
+  }
+
+  .page-demos2 .dm-hero h1 {
+    max-width: 780px;
+    font-size: clamp(48px, 6.7vw, 64px) !important;
+  }
+
+  .page-demos2 .dm-hero-copy > p {
+    max-width: 760px;
+  }
+
+  .page-demos2 .dm-hero-art {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1323 / 1080;
+  }
+
+  .page-demos2 .dm-hero-art img {
+    padding: 0 6vw 24px;
+  }
+}
+
+@media (max-width: 700px) {
+  .page-demos2 .dm-hero-copy {
+    padding: 38px 24px 28px !important;
+  }
+
+  .page-demos2 .dm-hero h1 {
+    margin: 25px 0 24px;
+    font-size: clamp(40px, 10.7vw, 50px) !important;
+    line-height: 1.04;
+  }
+
+  .page-demos2 .dm-hero-copy > p {
+    font-size: 14px;
+    line-height: 1.68;
+  }
+
+  .page-demos2 .dm-actions {
+    margin-top: 27px;
+  }
+
+  .page-demos2 .dm-hero-art {
+    aspect-ratio: 1323 / 1189;
+  }
+
+  .page-demos2 .dm-hero-art img {
+    padding: 0 12px 22px;
+  }
+}
+
+@media (max-width: 420px) {
+  .page-demos2 .dm-hero-copy {
+    padding-inline: 20px !important;
+  }
+
+  .page-demos2 .dm-hero h1 {
+    font-size: clamp(37px, 10.8vw, 46px) !important;
+  }
+
+  .page-demos2 .dm-actions {
+    align-items: flex-start;
+  }
+
+  .page-demos2 .dm-actions .button {
+    width: 100%;
+  }
+}

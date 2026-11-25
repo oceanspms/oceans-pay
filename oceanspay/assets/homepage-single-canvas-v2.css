@@ -1,0 +1,431 @@
+/* Homepage hero approval: one borderless, full-width canvas using the existing
+   Ocean Across copy, photography and interface cards. */
+
+.rev-home .unified-hero-home {
+  isolation: isolate;
+  box-sizing: border-box;
+  width: 100% !important;
+  max-width: none;
+  height: clamp(640px, 51.125vw, 818px);
+  min-height: 640px;
+  margin: 0 0 34px !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: var(--white) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.rev-home .unified-hero-home::before {
+  display: none;
+}
+
+.rev-home .unified-hero-home .hero-art {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.rev-home .unified-hero-home .hero-art > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  object-fit: cover;
+  object-position: right center;
+}
+
+.rev-home .unified-hero-home .hero-art::after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    var(--white) 0%,
+    var(--white) 34%,
+    rgba(255, 255, 255, 0.96) 44%,
+    rgba(255, 255, 255, 0.68) 55%,
+    rgba(255, 255, 255, 0.12) 68%,
+    transparent 76%
+  );
+}
+
+.rev-home .unified-hero-home .unified-hero-copy {
+  z-index: 5;
+  box-sizing: border-box;
+  width: 52%;
+  height: 100%;
+  min-height: 100%;
+  padding: clamp(58px, 4.625vw, 74px) 40px 56px clamp(60px, 4.875vw, 78px);
+  background: transparent;
+  align-items: center;
+  position: relative;
+}
+
+.rev-home .unified-hero-home .hero-copy-inner {
+  max-width: 590px;
+}
+
+.rev-home .unified-hero-home .unified-hero-copy .hero-copy-inner h1 {
+  margin: 27px 0 24px;
+  font-size: clamp(54px, 4.5vw, 72px);
+  line-height: 1.03;
+}
+
+.rev-home .unified-hero-home .hero-copy-inner h1 em {
+  color: var(--brass);
+  font-style: italic;
+}
+
+.rev-home .unified-hero-home .hero-copy-inner > p {
+  max-width: 545px;
+  font-size: 16px;
+  line-height: 1.68;
+}
+
+.rev-home .unified-hero-home .hero-actions {
+  gap: 34px;
+  margin-top: 30px;
+}
+
+.rev-home .unified-hero-home .button-primary {
+  min-height: 58px;
+  padding-inline: 24px;
+  font-size: 15px;
+}
+
+.rev-home .unified-hero-home .text-link {
+  font-size: 15px;
+}
+
+.rev-home .unified-hero-home .hero-copy-inner > small {
+  margin-top: 34px;
+  font-size: 10px;
+}
+
+.rev-home .unified-hero-home .hero-art-labels {
+  z-index: 3;
+}
+
+/* Structured zig-zag: right, left, right. The central rail remains outside
+   the portrait's protected face area at every desktop hero height. */
+.rev-home .unified-hero-home .home-card-workflow {
+  top: 7.3%;
+  left: 46.55%;
+}
+
+.rev-home .unified-hero-home .home-card-employee {
+  top: 34.85%;
+  left: 42.2%;
+}
+
+.rev-home .unified-hero-home .home-card-payments {
+  bottom: 9%;
+  left: 46.55%;
+}
+
+.rev-home .unified-hero-home .home-pound-node {
+  bottom: 26%;
+  left: 62.2%;
+}
+
+.rev-home .unified-hero-home .home-compliance-seal {
+  bottom: 23.5%;
+  left: 69.7%;
+}
+
+.rev-home .unified-hero-home .home-feature-stack {
+  right: 3.1%;
+  bottom: 7.5%;
+}
+
+/* Desktop: retain one continuous canvas while confining the photograph to
+   its approved right-hand area. This matches the source image ratio, keeping
+   the complete head in frame instead of vertically cropping the portrait. */
+@media (min-width: 1281px) {
+  .rev-home .unified-hero-home .hero-art {
+    width: 57%;
+    height: 100%;
+    right: 0;
+    left: auto;
+  }
+
+  .rev-home .unified-hero-home .hero-art > img {
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .rev-home .unified-hero-home .hero-art::after {
+    background: linear-gradient(
+      90deg,
+      var(--white) 0%,
+      rgba(255, 255, 255, 0.94) 10%,
+      rgba(255, 255, 255, 0.38) 24%,
+      transparent 38%
+    );
+  }
+
+  .rev-home .unified-hero-home .home-card-workflow {
+    top: 8%;
+    left: 22%;
+  }
+
+  .rev-home .unified-hero-home .home-card-employee {
+    top: 38%;
+    left: 14%;
+  }
+
+  .rev-home .unified-hero-home .home-card-payments {
+    bottom: 7%;
+    left: 21%;
+  }
+
+  .rev-home .unified-hero-home .home-pound-node {
+    bottom: 34%;
+    left: 39%;
+  }
+
+  .rev-home .unified-hero-home .home-compliance-seal {
+    bottom: 31%;
+    left: 54%;
+  }
+
+  .rev-home .unified-hero-home .home-feature-stack {
+    right: 3%;
+    bottom: 18%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .rev-home .unified-hero-home {
+    width: 100% !important;
+    height: 980px;
+    min-height: 980px;
+    margin-top: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  .rev-home .unified-hero-home .unified-hero-copy {
+    width: 100%;
+    height: 520px;
+    min-height: 520px;
+    padding: 44px 32px 28px;
+    align-items: flex-start;
+  }
+
+  .rev-home .unified-hero-home .hero-copy-inner {
+    max-width: 650px;
+  }
+
+  .rev-home .unified-hero-home .hero-art > img {
+    object-position: 60% 72%;
+  }
+
+  .rev-home .unified-hero-home .hero-art::after {
+    background: linear-gradient(
+      180deg,
+      var(--white) 0%,
+      var(--white) 45%,
+      rgba(255, 255, 255, 0.94) 53%,
+      rgba(255, 255, 255, 0.38) 68%,
+      transparent 80%
+    );
+  }
+
+  .rev-home .unified-hero-home .home-visual-system {
+    width: 760px;
+    height: 640px;
+    inset: auto auto -34px 50%;
+    transform: translateX(-50%) scale(0.72);
+    transform-origin: bottom center;
+  }
+}
+
+@media (max-width: 700px) {
+  .rev-home .unified-hero-home {
+    width: 100% !important;
+    height: auto;
+    min-height: 0;
+    margin: 0 0 28px !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rev-home .unified-hero-home .unified-hero-copy {
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    padding: 36px 22px 34px;
+    background: var(--white);
+  }
+
+  .rev-home .unified-hero-home .unified-hero-copy .hero-copy-inner h1 {
+    margin-block: 23px 20px;
+    font-size: clamp(40px, 11vw, 50px);
+    line-height: 1.02;
+  }
+
+  .rev-home .unified-hero-home .hero-copy-inner > p {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .rev-home .unified-hero-home .hero-actions {
+    width: 100%;
+    gap: 13px;
+    margin-top: 25px;
+  }
+
+  .rev-home .unified-hero-home .button-primary {
+    min-height: 54px;
+    font-size: 14px;
+  }
+
+  .rev-home .unified-hero-home .text-link {
+    font-size: 14px;
+  }
+
+  .rev-home .unified-hero-home .hero-copy-inner > small {
+    margin-top: 22px;
+    font-size: 9px;
+    line-height: 1.6;
+  }
+
+  .rev-home .unified-hero-home .hero-art {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 690px;
+    margin: 0;
+    position: relative;
+    inset: auto;
+    overflow: hidden;
+  }
+
+  .rev-home .unified-hero-home .hero-art > img {
+    object-fit: cover;
+    object-position: 70% center;
+  }
+
+  .rev-home .unified-hero-home .hero-art::after {
+    background: linear-gradient(
+      180deg,
+      var(--white) 0%,
+      rgba(255, 255, 255, 0.82) 5%,
+      rgba(255, 255, 255, 0.18) 14%,
+      transparent 23%
+    );
+  }
+
+  .rev-home .unified-hero-home .home-visual-system {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    transform: none;
+  }
+
+  .rev-home .unified-hero-home .home-data-card {
+    box-sizing: border-box;
+    width: min(43vw, 170px);
+    padding: 12px 11px;
+    border-radius: 8px;
+  }
+
+  .rev-home .unified-hero-home .home-data-card strong {
+    padding-bottom: 8px;
+    font-size: 10.5px;
+  }
+
+  .rev-home .unified-hero-home .home-data-card span {
+    min-height: 29px;
+    font-size: 9.5px;
+  }
+
+  .rev-home .unified-hero-home .home-data-card i {
+    width: 15px;
+    height: 15px;
+    font-size: 9.5px;
+  }
+
+  .rev-home .unified-hero-home .home-card-workflow {
+    top: 7%;
+    right: auto;
+    bottom: auto;
+    left: 5%;
+  }
+
+  .rev-home .unified-hero-home .home-card-employee {
+    top: 35%;
+    right: auto;
+    bottom: auto;
+    left: 27%;
+  }
+
+  .rev-home .unified-hero-home .home-card-payments {
+    top: 63%;
+    right: auto;
+    bottom: auto;
+    left: 8%;
+  }
+
+  .rev-home .unified-hero-home .home-pound-node {
+    display: grid;
+    width: 52px;
+    height: 52px;
+    top: 60%;
+    bottom: auto;
+    left: 55%;
+    font-size: 29px;
+  }
+
+  .rev-home .unified-hero-home .home-compliance-seal {
+    display: grid;
+    width: 94px;
+    height: 94px;
+    top: 32%;
+    bottom: auto;
+    left: 72%;
+    padding: 10px;
+  }
+
+  .rev-home .unified-hero-home .home-compliance-seal i {
+    width: 23px;
+    height: 23px;
+    font-size: 12px;
+  }
+
+  .rev-home .unified-hero-home .home-compliance-seal b {
+    font-size: 11px;
+  }
+
+  .rev-home .unified-hero-home .home-feature-stack {
+    display: grid;
+    width: min(42vw, 164px);
+    right: auto;
+    bottom: 8px;
+    left: 54%;
+    gap: 6px;
+  }
+
+  .rev-home .unified-hero-home .home-feature-stack span {
+    min-height: 37px;
+    padding: 0 8px 0 34px;
+    font-size: 8.5px;
+  }
+
+  .rev-home .unified-hero-home .home-feature-stack span::before {
+    width: 17px;
+    height: 17px;
+    left: 10px;
+    font-size: 9px;
+  }
+}

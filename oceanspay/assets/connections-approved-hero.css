@@ -1,0 +1,178 @@
+/* Approved Connections hero: one borderless white canvas with the existing
+   copy and a crisp four-way connections diagram. */
+.page-connections .connections-hero {
+  box-sizing: border-box;
+  width: 100% !important;
+  max-width: none;
+  min-height: 640px;
+  height: clamp(640px, 46vw, 790px);
+  margin: 0 0 34px !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: #fff !important;
+  grid-template-columns: minmax(0, 44.75%) minmax(0, 55.25%) !important;
+  align-items: stretch;
+  display: grid;
+  overflow: hidden;
+  contain: paint;
+}
+
+.page-connections .connections-hero-copy {
+  z-index: 2;
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: 0;
+  padding: 52px 34px 50px max(5.5vw, 48px) !important;
+  background: #fff !important;
+  justify-content: center;
+}
+
+.page-connections .connections-hero h1 {
+  max-width: 730px;
+  margin: 28px 0 26px;
+  font-size: clamp(52px, 3.15vw, 60px) !important;
+  line-height: 1.06;
+}
+
+.page-connections .connections-hero h1 em {
+  color: var(--brass) !important;
+  font-style: italic !important;
+}
+
+.page-connections .connections-hero-copy > p {
+  max-width: 640px;
+  font-size: 16px;
+  line-height: 1.72;
+}
+
+.page-connections .connections-actions {
+  gap: 42px;
+  margin-top: 29px;
+}
+
+.page-connections .connections-hero-copy > small {
+  margin-top: 31px;
+  color: var(--forest);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .13em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.page-connections .connections-network {
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-connections .connections-network::before,
+.page-connections .connections-network::after {
+  display: none !important;
+}
+
+.page-connections .connections-network img {
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  max-height: none;
+  object-fit: contain;
+  object-position: center;
+  background: transparent !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+@media (max-width: 1100px) {
+  .page-connections .connections-hero {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    margin: 0 0 34px !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    display: block;
+  }
+
+  .page-connections .connections-hero-copy {
+    height: auto;
+    padding: 52px 40px 34px !important;
+    justify-content: flex-start;
+  }
+
+  .page-connections .connections-hero h1 {
+    max-width: 780px;
+    font-size: clamp(48px, 6.7vw, 64px) !important;
+  }
+
+  .page-connections .connections-hero-copy > p {
+    max-width: 720px;
+  }
+
+  .page-connections .connections-network {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1080 / 670;
+  }
+}
+
+@media (max-width: 700px) {
+  .page-connections .connections-hero {
+    margin-bottom: 28px !important;
+  }
+
+  .page-connections .connections-hero-copy {
+    padding: 38px 24px 28px !important;
+  }
+
+  .page-connections .connections-hero h1 {
+    margin: 25px 0 24px;
+    font-size: clamp(40px, 10.7vw, 50px) !important;
+    line-height: 1.04;
+  }
+
+  .page-connections .connections-hero-copy > p {
+    font-size: 14px;
+    line-height: 1.68;
+  }
+
+  .page-connections .connections-actions {
+    gap: 14px;
+    margin-top: 27px;
+  }
+
+  .page-connections .connections-hero-copy > small {
+    margin-top: 28px;
+  }
+
+  .page-connections .connections-network {
+    aspect-ratio: 1080 / 670;
+  }
+}
+
+@media (max-width: 420px) {
+  .page-connections .connections-hero-copy {
+    padding-inline: 20px !important;
+  }
+
+  .page-connections .connections-hero h1 {
+    font-size: clamp(37px, 10.8vw, 46px) !important;
+  }
+
+  .page-connections .connections-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 250" role="img" aria-labelledby="title desc">
+  <title id="title">Ocean Across</title>
+  <desc id="desc">Reversed Ocean Across wordmark with the ocean droplet and the tagline Payroll That Flows.</desc>
+  <g transform="translate(26 28) scale(1.02)">
+    <path d="M61 0C63 13 72 28 84 44 98 62 111 82 117 104 123 126 116 149 101 164 90 175 75 180 60 180 45 180 30 175 19 164 4 149-3 126 3 104 9 82 22 62 36 44L50 28Q52 26 53 29L52 42C41 56 29 73 22 90 15 107 16 125 27 140 36 155 48 163 60 163 72 163 84 155 93 140 104 125 105 107 98 90 91 73 79 56 68 42 61 33 56 20 61 0Z" fill="#f8f6f1"/>
+    <path d="M60 58C52 74 38 91 36 107 34 127 45 141 60 143 75 141 86 127 84 107 82 91 68 74 60 58Z" fill="none" stroke="#d1a257" stroke-width="11.5" stroke-linejoin="round"/>
+  </g>
+  <text x="174" y="125" fill="#ffffff" font-family="Georgia, 'Times New Roman', serif" font-size="76" font-weight="600" letter-spacing="3.5">OCEAN</text>
+  <text x="530" y="125" fill="#e2b968" font-family="Georgia, 'Times New Roman', serif" font-size="76" font-weight="600" letter-spacing="3.5">ACROSS</text>
+  <line x1="172" y1="187" x2="276" y2="187" stroke="#e2b968" stroke-width="3"/>
+  <text x="546" y="198" fill="#ffffff" font-family="Georgia, 'Times New Roman', serif" font-size="32" font-weight="700" letter-spacing="7" text-anchor="middle">PAYROLL THAT FLOWS</text>
+  <line x1="816" y1="187" x2="928" y2="187" stroke="#e2b968" stroke-width="3"/>
+</svg>
